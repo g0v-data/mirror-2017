@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<cwbopendata xmlns="urn:cwb:gov:tw:cwbcommon:0.1">
+  <identifier>CWB-EQ106039-2017-0906-025545</identifier>
+  <sender>CWB_SC@scman.cwb.gov.tw</sender>
+  <sent>2017-09-06T03:11:44+08:00</sent>
+  <status>Actual</status>
+  <msgType>Issue</msgType>
+  <source>CWB</source>
+  <scope>Public</scope>
+  <dataset>
+    <datasetInfo>
+      <datasetDescription>地震報告</datasetDescription>
+      <datasetLanguage>zh-TW</datasetLanguage>
+      <issueTime>2017-09-06T03:11:44+08:00</issueTime>
+      <validTime><endTime>2017-09-06T11:11:44+08:00</endTime></validTime>
+    </datasetInfo>
+    <earthquake>
+      <reportType>地震報告</reportType>
+      <earthquakeNo>106039</earthquakeNo>
+      <reportContent>09/06-02:55臺灣東部海域發生規模5.1有感地震，最大震度臺東縣蘭嶼4級。</reportContent>
+      <reportColor>綠色</reportColor>
+      <web>http://scweb.cwb.gov.tw/GraphicContent.aspx?ItemId=49&amp;fileString=2017090602554551039</web>
+      <reportImageURI>http://scweb.cwb.gov.tw/webdata/OLDEQ/201709/2017090602554551039.gif</reportImageURI>
+      <shakemapImageURI>http://scweb.cwb.gov.tw/webdata/drawTrace/plotContour/2017/2017039.gif</shakemapImageURI>
+      <earthquakeInfo>
+        <originTime>2017-09-06T02:55:45+08:00</originTime>
+        <epicenter>
+          <epicenterLon unit="度">121.69</epicenterLon>
+          <epicenterLat unit="度">22.04</epicenterLat>
+          <location>臺東縣政府東南方  96.5  公里 (位於臺灣東部海域)</location>
+        </epicenter>
+        <depth unit="公里">9.3</depth>
+        <magnitude>
+          <magnitudeType>芮氏規模</magnitudeType>
+          <magnitudeValue>5.1</magnitudeValue>
+        </magnitude>
+        <source>中央氣象局</source>
+      </earthquakeInfo>
+      <intensity>
+        <shakingArea>
+          <areaDesc>臺東縣地區</areaDesc>
+          <areaName>臺東縣</areaName>
+          <areaIntensity unit="級">4</areaIntensity>
+          <infoStatus>observe</infoStatus>
+          <eqStation>
+            <stationName>蘭嶼</stationName>
+            <stationCode>LAY</stationCode>
+            <stationLon unit="度">121.56</stationLon>
+            <stationLat unit="度">22.04</stationLat>
+            <distance unit="公里">13.75</distance>
+            <azimuth unit="度">87.60</azimuth>
+            <stationIntensity unit="級">4</stationIntensity>
+            <pga unit="gal">
+              <vComponent>10.95</vComponent>
+              <nsComponent>36.55</nsComponent>
+              <ewComponent>30.80</ewComponent>
+            </pga>
+            <infoStatus>observe</infoStatus>
+            <waveImageURI>http://scweb.cwb.gov.tw/webdata/drawTrace/outcome/2017/2017039/4-LAY.gif</waveImageURI>
+          </eqStation>
+        </shakingArea>
+        <shakingArea>
+          <areaDesc>最大震度4級地區</areaDesc>
+          <areaName>臺東縣</areaName>
+          <areaIntensity unit="級">4</areaIntensity>
+        </shakingArea>
+      </intensity>
+      <reportRemark>本報告係中央氣象局地震觀測網即時地震資料地震速報之結果。</reportRemark>
+    </earthquake>
+  </dataset>
+</cwbopendata>
