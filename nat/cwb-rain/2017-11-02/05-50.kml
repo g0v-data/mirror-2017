@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>錯誤頁面</title>
+    <script src="scripts/jquery-1.11.0.min.js"></script>
+    <script>
+        var timeout;
+        var count = 10; // 倒數十秒
+
+        $(function () {
+            var timeout = setTimeout(countDown, 1000); // 1s執行一次CountDown
+        });
+
+        countDown = function () {
+            
+            if (count == 0) {
+                clearTimeout(timeout);
+                window.location.href = 'https://alerts.ncdr.nat.gov.tw';
+            }
+            else {
+                count--;
+                $("#countDown").html(count.toString());
+                setTimeout(countDown, 1000);
+            }
+        };
+    </script>
+</head>
+<body>
+    <div style="margin:20% auto;width:10%;min-width:180px;">
+        Oops…發生錯誤了！！！
+        將您導回示警平台首頁
+        請等待<label id="countDown" style="color:red" value="10"></label>秒。<br /><br />
+        或點<a href="https://alerts.ncdr.nat.gov.tw">此連結</a>。
+    </div>
+</body>
+</html>
