@@ -1,0 +1,846 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml "
+			xmlns:fb='http://www.facebook.com/2008/fbml' 
+			xmlns:og='http://ogp.me/ns#'>
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta property="og:site_name" content="立法院開放資料服務平台"/>
+		<meta property="og:title" content="立法院開放資料服務平台"/>
+		<meta property="og:type" content="article" />
+		<meta Property="og:image" content=""/>
+		<meta property="og:description" content="「立法院開放資料服務平台」，提供機制供立法院內及院外之各應用系統使用開放資料格式進行資料交換。" />		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>立法院開放資料服務平台-首頁</title>
+		
+
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<link href="img/favicon.ico" rel="SHORTCUT ICON">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/org.css" rel="stylesheet" type="text/css" />
+<link href="colorbox/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link id="st2" href="css/styles2.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/script.js"></script>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+
+
+	<link id="cc" href="" rel="stylesheet" type="text/css">
+
+
+		<link rel="stylesheet" href="css/news.css" type="text/css" />
+		</head>
+		
+		<body>
+        <div class="wrap">
+          
+
+
+<style id="antiClickjack">body{display: !important;}</style>
+<script type="text/javascript">
+   if (self === top) {
+       var antiClickjack = document.getElementById("antiClickjack");
+       antiClickjack.parentNode.removeChild(antiClickjack);
+   } else {
+       top.location = self.location;
+   }
+	
+	$(function() {
+		var screenCookie = getCookie("screenCookie");
+		var deviceAgent = navigator.userAgent.toLowerCase();  
+		
+		//預設手持裝置用手機板
+		if(deviceAgent.match(/(iphone|ipod|ipad|android)/) && $(window).width()<=768){
+			document.getElementById("cc").href="css/mobile.css";
+		} else {
+			document.getElementById("cc").href="";
+		}
+		//有設定過
+		if(screenCookie=='none'){
+			document.getElementById("cc").href="";
+		}else if(screenCookie=='mobile'){
+			document.getElementById("cc").href="css/mobile.css";
+		}
+	
+		$(".categoryItem").keyup(function(){
+			$(".submenu").removeAttr("style");
+		})
+ 		$('.submenu').keyup(function(e) {
+			   console.log('keyup called');
+			   console.log(e.Class)
+		  var code = e.keyCode || e.which;
+			   if (code == '9') {
+				  $(function() { 
+						$(".submenu").css({
+							"display":"block",
+							 "left":" auto",
+							 "top": "41px",
+							 "opacity":" 1"
+								}).trigger("refresh");
+			  });
+			  }
+		}); 
+	});
+	
+    function clk(obj){
+    	
+    	if (obj == 1) {
+			document.getElementById("cc").href="";
+			setCookie("screenCookie","none",1);
+		} else {
+			document.getElementById("cc").href="css/mobile.css";
+			setCookie("screenCookie","mobile",1);
+		}
+	}
+    
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1);
+            if (c.indexOf(name) != -1) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+        </script>
+        <noscript>
+	         <style type="text/css"> 
+		        #cssmenu2 {
+		        	display:block;
+					position: relative;
+					height: 41px;
+					width: auto;
+					background-image: url(../images/nav_bg.png);
+				}
+			</style>
+        </noscript>
+         <noscript><div align="right">行動版不支援javascript時請點選此<a href="index.action?v=m">連結</a></div></noscript>
+       <div class="header">
+       <input type="hidden" id="shareUrl" value="http://data.ly.gov.tw:80/index.action?">
+            <div class="header_link">
+           	    <a href="#" accesskey="U" title="上方連結區塊" tabindex="1"	>:::</a>
+            	<a href="sitemap.action" title="網站導覽"  tabindex="2">網站導覽</a>│<a href="index.action" title="回首頁" tabindex="3">回首頁</a>│<a href="rss.action" title="RSS" tabindex="4">RSS</a>│<a href="suggestion.action" title="意見回饋" tabindex="5">意見回饋</a>│<a href="javascript:clk('2')" title="行動版" tabindex="6">行動版</a><span class="share">
+            	<a href='http://www.facebook.com/share.php?u=http://data.ly.gov.tw:80/index.action?' title="分享至FaceBook,開新視窗" target="_blank"  tabindex="7"><img src="images/share01.png" width="21" height="20" alt="分享至FaceBook" title="分享至FaceBook"/></a>  
+            	<a href='http://www.plurk.com/?qualifier=shares&status=[推] http://data.ly.gov.tw:80/index.action? (%E7%AB%8B%E6%B3%95%E9%99%A2%E9%96%8B%E6%94%BE%E8%B3%87%E6%96%99%E6%9C%8D%E5%8B%99%E5%B9%B3%E5%8F%B0)' title="分享至plurk,開新視窗" target="_blank" tabindex="8"><img src="images/share02.png" width="21" height="20" alt="分享至plurk" title="分享至plurk"/></a>  
+            	<a href='http://twitter.com/?status= http://data.ly.gov.tw:80/index.action? (%E7%AB%8B%E6%B3%95%E9%99%A2%E9%96%8B%E6%94%BE%E8%B3%87%E6%96%99%E6%9C%8D%E5%8B%99%E5%B9%B3%E5%8F%B0)' title="分享至twitter,開新視窗" target="_blank" tabindex="9"	><img src="images/share03.png" width="21" height="20" alt="分享至twitter" title="分享至twitter"/></a>
+			</span></div>
+            <div class="logo"><a href="index.action" tabindex="11"	><img src="images/logo.png" alt="立法院開放資料服務平台" title="立法院開放資料服務平台"/></a></div>
+		 
+            <div id='cssmenu' >
+              <ul>
+                <li class='active has-sub '  ><a href='#' title="資料目錄" tabindex="12"	 name="categoryItem"><span>資料目錄</span></a>
+                  <ul class="submenu">
+                    <div class="float_left">
+                      <li ><a href='catelog.action'  tabindex="13"	><span>全部</span></a></li>      
+                    	 
+						  <li ><a href='/listcatelog.action?catCd=161'   tabindex="14">原始檔類</a></li>						
+						 
+						  <li ><a href='/listcatelog.action?catCd=60'   tabindex="14">質詢類</a></li>						
+						 
+						  <li ><a href='/listcatelog.action?catCd=2'   tabindex="14">委員類</a></li>						
+						
+                    </div>
+                    <div class="float_right"> 
+                    	 
+						  <li ><a href='/listcatelog.action?catCd=1' tabindex="15"	>議事類</a></li>						
+						 
+						  <li ><a href='/listcatelog.action?catCd=11' tabindex="15"	>會議類</a></li>						
+						 
+						  <li ><a href='/listcatelog.action?catCd=101' tabindex="15"	>其他類</a></li>						
+						
+                    </div>
+                  </ul>
+                </li>
+                <li><a class="categoryItem" href='about.action' title="平台介紹"  tabindex="16"	><span>平台介紹</span></a></li>
+                <li><a href='developer.action' title="開發指南"  tabindex="17"	><span>開發指南</span></a></li>
+                <li><a href='principle.action' title="授權條款" tabindex="18"	><span>授權條款</span></a></li>
+                <li class='last'><a href='faq.action' title="常見問題" tabindex="19"	><span>常見問答</span></a></li>
+              </ul>
+            </div>
+          
+		   
+          </div>
+           <div class="mobilelink">
+          
+		  
+		  		<a href="catelog.action" title="資料目錄"  tabindex="-1">資料目錄</a>
+		  		<a href="inedx.action" title="回首頁" tabindex="-1">回首頁</a>
+		  
+		  </div>
+          <div class="news">
+            <div class="float_left" style="margin-top:2px"><a href="./news.action" class="fontbold border_right padding_r_20" title="最新消息" tabindex="20"	>最新消息</a>
+            
+            <!-- ****************  跑馬燈  ****************** -->
+            <div id="abgne_marquee" class="marquee">
+            	<script>
+				$(function() {
+					// 先取得 div#abgne_marquee ul
+					// 接著把 ul 中的 li 項目再重覆加入 ul 中(等於有兩組內容)
+					// 再來取得 div#abgne_marquee 的高來決定每次跑馬燈移動的距離
+					// 設定跑馬燈移動的速度及輪播的速度
+					var $marqueeUl = $('div#abgne_marquee ul'), $marqueeli = $marqueeUl
+							.append($marqueeUl.html()).children(), _height = $(
+							'div#abgne_marquee').height()
+							* -1, scrollSpeed = 600, timer, speed = 3000 + scrollSpeed;
+		
+					// 把 $marqueeUl 的 top 設為顯示到第二組內容的第一筆
+					$marqueeUl.css('top', $marqueeli.length / 2 * _height);
+		
+					// 幫左邊 $marqueeli 加上 hover 事件
+					// 當滑鼠移入時停止計時器；反之則啟動
+					$marqueeli.hover(function() {
+						clearTimeout(timer);
+					}, function() {
+						timer = setTimeout(showad, speed);
+					});
+		
+					// 控制跑馬燈移動的處理函式
+					function showad() {
+						var _now = $marqueeUl.position().top / _height;
+						_now = (_now - 1 + $marqueeli.length) % $marqueeli.length;
+		
+						// $marqueeUl 移動
+						$marqueeUl.animate({
+							top : _now * _height
+						}, scrollSpeed, function() {
+							// 如果已經移動到第一組時...則馬上把 top 設為顯示到第二組內容的第一筆
+							// 藉此產生不間斷的輪播
+							if (_now == 0) {
+								$marqueeUl.css('top', $marqueeli.length / 2 * _height);
+							}
+						});
+		
+						// 再啟動計時器
+						timer = setTimeout(showad, speed);
+					}
+		
+					// 啟動計時器
+					timer = setTimeout(showad, speed);
+		
+				//	$('a').focus(function() {
+				//		this.blur();
+				//	});
+				});
+			</script>
+            	<noscript>
+				&nbsp;請點擊左方最新消息連結觀看內容。
+				</noscript>
+				<ul>
+					
+						
+							<li><a href='/get.action?id=181' title='2016-12-02 (本網站將於105年12月2日12時至13時暫時停止服務)'>2016-12-02&nbsp;&nbsp;(本網站將於105年12月2日12時至13時暫時停止服務)</a></li>
+						
+						
+									
+				</ul>
+			</div>
+			<!-- ****************  跑馬燈  ****************** -->
+			
+        </div>
+            <span class="search float_right">
+            
+
+<form name="search" id="search" action="search.action" method="post">
+            <!-- <div class="accesskey" style="margin-left:-25px"><a href="#" accesskey="S" title="全文檢索區塊">:::</a></div> -->
+            <input name="key" type="text" accesskey="S" placeholder="搜尋有關立法院審核之各項數據" value="" />
+            <input type="hidden" name="csrfPreventionSalt" value="" tabindex="20"	/>
+            <input id="btn_search" type="submit" value="資料搜尋" class="search_submit" style="box-shadow: none;border-radius: 0 5px 5px 0;height:32px;width:73px;" title="資料搜尋">
+           
+            <input type="hidden" name="as_sfid" value="AAAAAAXMDiARlEBjNgXwzXz0BHlYTuNSU6-GUWgWJ2HzGUnOYvWqmnvd9xbAJJuHjTybnRthf-hS6tlLWhtONMTwSlGSg1Q0o-kKN1VqvGb_4HJfFsvQmDNLBMv9YQPiIiSsSBA=" /><input type="hidden" name="as_fid" value="7df7d24c366fdceb802132a363917efd3ee17421" /></form>
+            </span>
+          </div>
+          <div class="index_content">
+          <div class="accesskey"><a href="#" accesskey="C" title="主要內容區塊">:::</a></div>
+            <div class="datagroup">
+              <div>
+                <p>最新資料</p>
+                <script>
+                $(function(){
+                	$('.link_catelog a').each(function(){
+                		//alert($(this).html());
+                	});
+                	
+                });
+                </script>
+                <ul>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=1' class="block fontbold" title="議事類">議事類</a>
+										
+									
+	
+								
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=3' title='報告事項'>
+							報告事項
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=143' title='會議完整影片相關資訊'>
+							會議完整影片相關資訊
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=148' title='委員發言片段相關影片資訊'>
+							委員發言片段相關影片資訊
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=221' title='院會發言名單'>
+							院會發言名單
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=223' title='委員會發言名單'>
+							委員會發言名單
+							</a>
+							</span>			
+							</li>
+					
+				</ul>
+                <p class="align-center"><a href="./listlastds.action"><img src="images/icon_more.png" width="50" height="14" alt="更多最新資料" title="更多最新資料"/></a></p>
+              </div>
+              <div>
+                <p>熱門資料</p>
+                <ul>
+				
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=60' class="block fontbold" title="質詢類">質詢類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=2' title='行政院答覆'>
+							行政院答覆
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=1' class="block fontbold" title="議事類">議事類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=20' title='議案提案'>
+							議案提案
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=1' class="block fontbold" title="議事類">議事類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=3' title='報告事項'>
+							報告事項
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=161' class="block fontbold" title="原始檔類">原始檔類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=25' title='議事日程原始檔案'>
+							議事日程原始檔案
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=143' title='會議完整影片相關資訊'>
+							會議完整影片相關資訊
+							</a>
+							</span>			
+							</li>
+					
+				</ul>
+                <p class="align-center"><a href="./listhotds.action"><img src="images/icon_more.png" width="50" height="14" alt="更多熱門資料" title="更多熱門資料"/></a></p>
+              </div>
+              <div>
+                <p>推薦資料</p>
+                <ul>
+				
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=143' title='會議完整影片相關資訊'>
+							會議完整影片相關資訊
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=223' title='委員會發言名單'>
+							委員會發言名單
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=221' title='院會發言名單'>
+							院會發言名單
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=11' class="block fontbold" title="會議類">會議類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=148' title='委員發言片段相關影片資訊'>
+							委員發言片段相關影片資訊
+							</a>
+							</span>			
+							</li>
+					
+						<li>	
+							<span class="float_right font_13">2017-04-23</span>
+							<span class="link_catelog">
+							
+							
+							
+								
+								
+								
+								
+									
+								
+
+								
+									
+									
+									
+									
+										<a href='/listcatelog.action?catCd=101' class="block fontbold" title="其他類">其他類</a>
+										
+									
+	
+								
+								
+								
+							
+							</span>
+							<span class="link_coffee link_registername">
+							<a href='/getds.action?id=144' title='遊說案件變更登記'>
+							遊說案件變更登記
+							</a>
+							</span>			
+							</li>
+					
+				</ul>
+                <p class="align-center"><a href="./listrecommendds.action"><img src="images/icon_more.png" width="50" height="14" alt="更多推薦資料" title="更多推薦資料"/></a></p>
+              </div>
+            </div>
+            
+            <div class="clear">
+	            <div class="app">
+					<img src="images/app.png" width="200" height="107" usemap="#Map" border="0"  alt="法案審議訂閱" title="法案審議訂閱"/>
+	    			<map name="Map" id="Map">
+	    			<area shape="rect" coords="3,3,197,77" href="/demoapp_login.action"   target="_blank"alt="法案審議訂閱" title="法案審議訂閱"/>
+	      			<area shape="rect" coords="135,77,200,104" href="./appexample.action" alt="法案審議訂閱說明" title="法案審議訂閱說明"/>
+	    			</map>
+	    		</div>
+				<div class="links" style="margint:22px">
+                	<p class="float_left"><img src="images/icon_link.png" width="21" height="21" alt="lnk" alt="相關網站圖示" title="相關網站"/> 相關網站<a href="morepage.action" class="block margin10"><img src="images/icon_more.png" width="50" height="14" alt="更多"  title="更多相關網站"/></a></p>
+                	<ul>
+                  		<li><a href="http://data.gov.tw/" target="_blank" title="政府資料開放平臺「另開新視窗」">政府資料開放平臺</a><a href="http://data.taipei.gov.tw/" target="_blank" title="臺北市政府資料開放平臺「另開新視窗」">臺北市政府資料開放平臺</a><a href="http://data.ntpc.gov.tw/NTPC/" target="_blank" title="新北市政府資料開放平臺「另開新視窗」">新北市政府資料開放平臺</a></li>
+                  		<li><a href="http://data.taichung.gov.tw/GipOpenWeb/wSite/mp?mp=1" target="_blank" title="臺中市政府資料開放平臺「另開新視窗」">臺中市政府資料開放平臺</a><a href="http://data.tainan.gov.tw/" target="_blank" title="臺南市政府資料開放平臺「另開新視窗」">臺南市政府資料開放平臺</a><a href="http://data.kaohsiung.gov.tw/Opendata/" target="_blank" title="高雄市政府資料開放平臺「另開新視窗」">高雄市政府資料開放平臺</a></li>
+                	</ul>
+              	</div>
+    		</div>
+    		
+          </div>
+          
+        
+
+
+
+
+<div class="website"><a href="javascript:clk('1');" title="電腦版">電腦版</a></div>
+
+
+ <div class="footer">
+            <div class="float_left" style="margin-right:20px"><img src="images/logo_footer.png" width="53" height="68" class="margin5" alt="logo_footer" title="立法院"/></div>
+            <div class="float_right" style="margin:-1px;">
+            <a href="http://www.handicap-free.nat.gov.tw/Applications/Detail?category=20150508144221" title="無障礙網站">
+    			<img src="images/icon_a+.png" width="88" height="31" class="margin5" alt="通過A+優先等級無障礙網頁檢測" />
+			</a>
+            <a href="http://www.gov.tw/"  target="_blank"><img src="images/icon_egov.png" width="43" height="46" class="margin5" alt="我的E政府" title="我的E政府「另開新視窗」"/></a></div>
+            <div class="margin10"><p>Copyright © 2014 立法院版權所有　建議最佳瀏覽環境：IE10.0 /Chrome / FireFox 1024x768以上模式<br/></p>
+              立法院　10051 台北市中正區中山南路1號<span class="link_bg_white"><a href="http://www.ly.gov.tw/07_misc/location.jsp" title="交通位置圖「另開新視窗」" target="_blank"><font size="1">交通位置圖</font></a></span> tel：02-23585858 &nbsp; 瀏覽次數：1588224<br/>
+              立法院中部辦公室　41341 台中市霧峰區中正路734號 <span class="link_bg_white show" style="display:'block'"><a href="http://www.ly.gov.tw/14_others/policy_security01.jsp" title="隱私權政策" style="display:'block'" target="_blank"><font size="1">隱私權政策</font></a><p style="display:none;">│</p><a href="./security.action" title="個資保護及網站安全政策"><font size="1">個資保護及網站安全政策</font></a><p style="display:none;">│</p><a href="./copyprotection.action" title="立法院網站資料開放宣告"><font size="1">立法院網站資料開放宣告</font></a><p style="display:none;">│</p><a href="http://www.ly.gov.tw" title="機關網站「另開新視窗」" target="_blank"><font size="1">機關網站</font></a></span></div>
+</div>
+          
+          
+        </div>  
+        
+</body>
+</html>
